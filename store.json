@@ -1,0 +1,49 @@
+{
+  "routes": {
+    "/books": "/book"
+  },
+  "book": [
+    {
+      "author": "George Orwell",
+      "category": "Fiction",
+      "isbn": "9780451524935",
+      "price": 9.99,
+      "title": "1984"
+    },
+    {
+      "author": "Harper Lee",
+      "category": "Classic",
+      "isbn": "9780061120084",
+      "price": 7.19,
+      "title": "To Kill a Mockingbird"
+    },
+    {
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "isbn": "9780439554930",
+      "price": 10.99,
+      "title": "Harry Potter and the Sorcerer's Stone"
+    },
+    {
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "isbn": "9780544003415",
+      "price": 14.99,
+      "title": "The Hobbit"
+    },
+    {
+      "author": "Yuval Noah Harari",
+      "category": "Non-fiction",
+      "isbn": "9780062316097",
+      "price": 12.49,
+      "title": "Sapiens: A Brief History of Humankind"
+    },
+    {
+      "author": "Michelle Obama",
+      "category": "Biography",
+      "isbn": "9781524763138",
+      "price": 19.99,
+      "title": "Becoming"
+    }
+  ]
+}

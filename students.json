@@ -1,0 +1,118 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "location": "New York",
+      "phone": "+1-555-1234",
+      "course": [
+        "Computer Science",
+        "Mathematics"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "location": "Toronto",
+      "phone": "+1-555-5678",
+      "course": [
+        "Physics",
+        "Chemistry"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "location": "Vancouver",
+      "phone": "+1-555-8765",
+      "course": [
+        "English Literature",
+        "Philosophy"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Bob Brown",
+      "location": "London",
+      "phone": "+44-20-7946-0958",
+      "course": [
+        "History",
+        "Political Science"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Charlie White",
+      "location": "Sydney",
+      "phone": "+61-2-9374-4000",
+      "course": [
+        "Biology",
+        "Environmental Science"
+      ]
+    },
+    {
+      "id": "e6cd",
+      "phone": "4167222716",
+      "name": "Tarik",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "Canada"
+    },
+    {
+      "id": "94a8",
+      "phone": "4167222716",
+      "name": "Tarik",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "Canada"
+    },
+    {
+      "id": "123",
+      "phone": "123456789",
+      "name": "Tarik",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "Macedonia"
+    },
+    {
+      "id": "123",
+      "phone": "123456789",
+      "name": "Tarik",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "Macedonia"
+    },
+    {
+      "id": "42a7"
+    },
+    {
+      "id": "b170"
+    },
+    {
+      "id": "c1ac"
+    },
+    {
+      "id": "a06c"
+    },
+    {
+      "id": "ed59"
+    },
+    {
+      "id": "4e48"
+    },
+    {
+      "id": "9cbe"
+    },
+    {
+      "id": "ff73"
+    }
+  ]
+}

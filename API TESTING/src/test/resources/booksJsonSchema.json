@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome8Element"
+    },
+    "definitions": {
+        "Welcome8Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "isbn": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "subtitle": {
+                    "type": "string"
+                },
+                "author": {
+                    "type": "string"
+                },
+                "published": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "publisher": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "number"
+                },
+                "id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "author",
+                "id",
+                "isbn",
+                "price",
+                "published",
+                "publisher",
+                "subtitle",
+                "title"
+            ],
+            "title": "Welcome8Element"
+        }
+    }
+}
