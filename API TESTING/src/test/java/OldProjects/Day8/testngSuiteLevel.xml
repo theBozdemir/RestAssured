@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Test -1">
+        <classes>
+            <class name="OldProjects.Day1.Day8.CreateUser"/>
+        </classes>
+    </test>
+
+    <test name="Test -2">
+        <classes>
+            <class name="OldProjects.Day1.Day8.GetUser"/>
+        </classes>
+    </test>
+
+    <test name="Test -3">
+        <classes>
+            <class name="OldProjects.Day1.Day8.UpdateUser"/>
+        </classes>
+    </test>
+
+    <test name="Test -4">
+        <classes>
+            <class name="OldProjects.Day1.Day8.DeleteUser"/>
+        </classes>
+    </test>
+
+</suite>
