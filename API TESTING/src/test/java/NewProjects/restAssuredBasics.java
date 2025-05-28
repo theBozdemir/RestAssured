@@ -2,6 +2,7 @@ package NewProjects;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import org.testng.Assert;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
@@ -77,8 +78,10 @@ public class restAssuredBasics {
                 .then()
                 .assertThat().log().all().statusCode(200)
                 .extract().response().asString();
-        JsonPath js1=new JsonPath(getPLaceRes);
+        //Calling String to json
+        JsonPath js1=Reuseable_methods.rawToJson(getPLaceRes);
         String responseAddress=js1.getString("address");
+        Assert.assertEquals(newAddress,responseAddress);
 
     }
 
