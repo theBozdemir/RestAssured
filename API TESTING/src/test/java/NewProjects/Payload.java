@@ -49,4 +49,13 @@ public class Payload {
                     "\n" +
                     "}";
     }
+        public static String book(String isbn, String aisle){
+           String body= "    {\n" +
+                    "        \"name\": \"Appium\",\n" +
+                    "        \"isbn\": \""+isbn+"\",\n" +
+                    "        \"aisle\": \""+aisle+"\",\n" +
+                    "        \"author\": \"John Doe\"\n" +
+                    "    }";
+           return body;
+    }
 }

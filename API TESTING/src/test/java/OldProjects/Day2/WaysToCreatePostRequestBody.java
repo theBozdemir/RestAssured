@@ -1,4 +1,4 @@
-package OldProjects.Day1.Day2;
+package OldProjects.Day2;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -113,7 +113,7 @@ public class WaysToCreatePostRequestBody {
         // we need to go to pom.xml and add org.json dependency
 
         //We need to create json object
-        Pojo_PostRequest data=new Pojo_PostRequest();
+        OldProjects.Day1.Day2.Pojo_PostRequest data=new Pojo_PostRequest();
         data.setName("Tarik");
         data.setLocation("Los Angeles");
         data.setPhone("123456789");
@@ -183,5 +183,8 @@ public class WaysToCreatePostRequestBody {
                 .then()
                 .statusCode(200);
 
+    }
+
+    private class Pojo_PostRequest extends OldProjects.Day1.Day2.Pojo_PostRequest {
     }
 }
