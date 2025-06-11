@@ -1,4 +1,4 @@
-package OldProjects.Day1.Day6;
+package OldProjects.Day6;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,16 +7,16 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class SerializationDeserialization {
+/*public class SerializationDeserialization {
 
-    @Test
+   /* //@Test
     void serialization() throws JsonProcessingException { // POJO --------> JSON
         RestAssured.baseURI="http://localhost:3000";
         //We created java object using pojo class
         POJO student =new POJO();
-        student.setName("Tarik");
+        //student.setName("Tarik");
         student.setID("1613");
-        student.setLocation("Canada");
+        //student.setLocation("Canada");
         student.setPhone("4167222716");
         String courseArr[]= {"C", "C++"};
         student.setCourse(courseArr);
@@ -37,7 +37,7 @@ public class SerializationDeserialization {
 
 
     }
-    @Test
+    //@Test
     void deserialization() throws JsonProcessingException { // JSON -------> POJO
         String jsonData = "{\n" +
                 "  \"name\" : \"Tarik\",\n" +
@@ -50,8 +50,8 @@ public class SerializationDeserialization {
         //Converting Json data into POJO Class Object
         ObjectMapper stuOBJ =new ObjectMapper();
         POJO ObjPojo=stuOBJ.readValue(jsonData, POJO.class); // this will return student class object
-        String name = ObjPojo.getName();
-        String location = ObjPojo.getLocation();
+        //String name = ObjPojo.getName();
+        //String location = ObjPojo.getLocation();
         String id = ObjPojo.getID();
         String phone = ObjPojo.getPhone();
         String course1= ObjPojo.getCourse()[0];
@@ -61,3 +61,4 @@ public class SerializationDeserialization {
 
     }
 }
+*/

@@ -1,9 +1,14 @@
 package NewProjects;
 
+import NewProjects.Serialization_and_Deserialization.Deserialization.Api;
+import NewProjects.Serialization_and_Deserialization.Deserialization.GetCourse;
+import NewProjects.Serialization_and_Deserialization.Deserialization.WebAutomation;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -29,10 +34,25 @@ public class Authentication {
     public void getClassName(){
         String access_token=getAccessToken();
         System.out.println("Access token is:"+access_token);
-        Response res=given()
+        GetCourse res=given()
                 .queryParam("access_token",access_token)
-                .when().get("/getCourseDetails");
-        System.out.println("Response body is:"+res.getBody().asPrettyString());
+                .when().log().all().get("/getCourseDetails").as(GetCourse.class);
+        System.out.println(res.getInstructor());
+        //Traversing inside ApiCourses
+        List<Api> apiCourses=res.getCourses().getApi();
+        for(int i=0;i<apiCourses.size();i++){
+            if(apiCourses.get(i).getCourseTitle().equalsIgnoreCase("soapui webservices testing")){
+                System.out.println("API Course price is:"+apiCourses.get(i).getPrice());
+                break;
+            }
+        }
+        //Traversing inside webAutomation
+        List<WebAutomation> webAutoCourses=res.getCourses().getWebAutomation();
+        int i=0;
+        for(WebAutomation webAutoCourse:webAutoCourses){
+            System.out.println("Course name "+(i+1)+" "+webAutoCourse.getCourseTitle());
+            i++;
+        }
     }
 
 }
