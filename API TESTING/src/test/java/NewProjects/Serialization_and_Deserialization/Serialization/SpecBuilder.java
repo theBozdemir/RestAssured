@@ -16,10 +16,11 @@ import static io.restassured.RestAssured.given;
 
 public class SpecBuilder {
     static{
-        RestAssured.baseURI="https://rahulshettyacademy.com";
+
     }
     @Test
     public void serialization(){
+        RestAssured.baseURI="https://rahulshettyacademy.com";
         Address a=new Address();
         a.setAccuracy(50);
         a.setName("Frontline house");
@@ -37,7 +38,7 @@ public class SpecBuilder {
         a.setLocation(l);
         a.setTypes(myList);
 
-        RequestSpecification req=new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").addQueryParam("key","qaclick123")
+        RequestSpecification req=new RequestSpecBuilder().addQueryParam("key","qaclick123")
                 .setContentType(ContentType.JSON).build();
         ResponseSpecification resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON)
                 .build();

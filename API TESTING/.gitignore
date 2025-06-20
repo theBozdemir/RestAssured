@@ -1,5 +1,6 @@
 # Exclude Connexall package from test code
 /src/test/java/Connexall/
+logging.txt
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
