@@ -59,7 +59,7 @@ public class ECommerceAPITest {
                 .param("productPrice","11500")
                 .param("productDescription","Zara")
                 .param("productFor","men")
-                .multiPart("productImage",new File("C:\\Users\\tbozdemir\\Downloads\\shirt_resized.jpg"));
+                .multiPart("productImage",new File("C://Users//tbozdemir//Downloads//shirt.png"));
         Response res= req2.when().post("/api/ecom/product/add-product");
         System.out.println("CreateProduct response : "+res.getBody().asPrettyString());
         JsonPath js=res.jsonPath();
