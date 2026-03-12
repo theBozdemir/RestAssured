@@ -23,5 +23,12 @@ public class TestDataBuild {
         addPlace.setLocation(loc);
         return addPlace;
     }
+    public static String deletePlacePayload(String placeId) {
+        return """
+    {
+        "place_id": "%s"
+    }
+    """.formatted(placeId);
+    }
 
 }

@@ -16,18 +16,18 @@ Body:
         "lng": 33.427362
     },
     "accuracy": 50,
-    "name": "AAhouse",
+    "name": "Bozdemir",
     "phone_number": null,
-    "address": "World Cross Center",
+    "address": "NorthAmerica",
     "types": [
         "shop",
         "shoe park"
     ],
     "website": "www.connexall.com",
-    "language": "English"
+    "language": "Turkish"
 }
 HTTP/1.1 200 OK
-Date: Mon, 09 Mar 2026 16:47:42 GMT
+Date: Thu, 12 Mar 2026 13:09:40 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
@@ -41,13 +41,52 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "4f6a7d1958e23cab2dfe9927647d39e3",
+    "place_id": "14f6bd9f548e005b1f0b7d2f53db65fa",
     "scope": "APP",
-    "reference": "aafaa2426d5de0b7d0caeb7ec835d481aafaa2426d5de0b7d0caeb7ec835d481",
-    "id": "aafaa2426d5de0b7d0caeb7ec835d481"
+    "reference": "1aa99ca693555c4fd349146e2a117f7d1aa99ca693555c4fd349146e2a117f7d",
+    "id": "1aa99ca693555c4fd349146e2a117f7d"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=14f6bd9f548e005b1f0b7d2f53db65fa
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=14f6bd9f548e005b1f0b7d2f53db65fa
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 12 Mar 2026 13:09:41 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 215
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "Bozdemir",
+    "phone_number": "",
+    "address": "NorthAmerica",
+    "types": "shop,shoe park",
+    "website": "www.connexall.com",
+    "language": "Turkish"
 }
 Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
@@ -59,38 +98,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "location": {
-        "lat": -38.383494,
-        "lng": 33.427362
-    },
-    "accuracy": 50,
-    "name": "BBhouse",
-    "phone_number": null,
-    "address": "Sea Cross Center",
-    "types": [
-        "shop",
-        "shoe park"
-    ],
-    "website": "www.connexall.com",
-    "language": "Spanish"
+    "place_id": "14f6bd9f548e005b1f0b7d2f53db65fa"
 }
 HTTP/1.1 200 OK
-Date: Mon, 09 Mar 2026 16:47:43 GMT
+Date: Thu, 12 Mar 2026 13:09:43 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
 Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 194
+Content-Length: 15
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json;charset=UTF-8
 
 {
-    "status": "OK",
-    "place_id": "d2b0eba24828963ea884cd45a6327c12",
-    "scope": "APP",
-    "reference": "323602d5b3fb3beadcde455c1a02a61f323602d5b3fb3beadcde455c1a02a61f",
-    "id": "323602d5b3fb3beadcde455c1a02a61f"
+    "status": "OK"
 }
