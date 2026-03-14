@@ -1,11 +1,13 @@
 package API_Recap.BDD_Cucumber.cucumber.Options;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/API_Recap/BDD_Cucumber/features",glue = "API_Recap.BDD_Cucumber.StepDefinitions", tags="@AddPlaceRecap")
-public class TestRunner {
-//tags={"@DeletePlace"}
+@CucumberOptions(
+        features = "src/test/java/API_Recap/BDD_Cucumber/features",
+        glue = "API_Recap.BDD_Cucumber.StepDefinitions",
+        tags = "@AddPlaceRecap"
+)
+public class TestRunnerCucumber extends AbstractTestNGCucumberTests {
+    //tags={"@DeletePlace"}
 }
