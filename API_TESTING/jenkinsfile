@@ -12,7 +12,14 @@ pipeline{
         }
         stage("Run Cucumber tests"){
             steps{
-                bat "mvn clean -Pcucumber-report -Dtest=TestRunnerCucumber test verify"
+                script {
+                    def mvnCmd = "cd API_TESTING && mvn clean -Pcucumber-report -Dtest=TestRunnerCucumber test verify"
+                    if (isUnix()) {
+                        sh mvnCmd
+                    } else {
+                        bat mvnCmd
+                    }
+                }
             }
         }
     }
