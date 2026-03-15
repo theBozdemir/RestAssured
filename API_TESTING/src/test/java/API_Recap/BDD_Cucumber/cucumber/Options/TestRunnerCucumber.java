@@ -6,7 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/API_Recap/BDD_Cucumber/features",
         glue = "API_Recap.BDD_Cucumber.StepDefinitions",
-        tags = "@AddPlaceRecap"
+        //tags = "@AddPlaceRecap",
+        plugin = "json:target/jsonReports/cucumber-report.json"
+        
 )
 public class TestRunnerCucumber extends AbstractTestNGCucumberTests {
     //tags={"@DeletePlace"}

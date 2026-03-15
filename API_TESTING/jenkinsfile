@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+    environment{
+        BASE_URL='https://rahulshettyacademy.com'
+    }
+    stages{
+        stage("Checkout"){
+            steps{
+                git branch: 'main'
+                url: "https://github.com/theBozdemir/RestAssured.git"
+            }
+        }
+        stage("Run Cucumber tests"){
+            steps{
+                bat "mvn clean -Pcucumber-report -Dtest=TestRunnerCucumber test verify"
+            }
+        }
+    }
+}
